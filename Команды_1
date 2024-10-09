@@ -1,0 +1,55 @@
+1.Характеристика убунты (команда, которая выводит нужные данные):
+hostnamectl
+uname --all
+cat /etc/lsb-release
+
+2.Пять созданных директорий с созданными в них файлами:
+mkdir Dir{1..5}
+touch Dir1/file1.txt && touch Dir2/file2.txt && touch Dir3/file3.txt && touch Dir4/file4.txt && touch Dir5/file5.txt
+
+3.Три созданных через терминал пользователя:
+sudo adduser <name_user>
+sudo useradd -m <name_user>
+
+4.В какой директории лежит FireFox, Google Chrome:
+whereis firefox
+whereis google-chrome
+
+5.Найти, в какой директории лежит bash:
+whereis bash
+
+6.Где искать файлы конфигов к программам.
+  На уровне пользователя:
+  ls home/<user_name>/.config
+  ls ~/.config
+
+  На уровне системы:
+  ls /etc
+
+7.Где лежит syslog:
+ls -al /var/log
+
+8.Где лежат файлы пользователя:
+ls home/<user_name>/
+find -user <user_name>
+
+9.Какими командами можно найти, где лежит файл:
+find -name "file1.txt"
+
+10.Какой командой можно посмотреть директорию с указанными правами на директории, файлы:
+ls -l
+
+11.Какой командой можно найти скрытые директории и файлы:
+ls -a
+ls -al
+
+12.Команды для навигации по директориям. Команды для быстрого перемещения.
+   cd <directory>
+   cd ..
+   cd -
+
+13. Установить утилиту tree и посмотреть как она работает и что ей можно сделать.
+sudo apt update
+sudo apt install tree
+tree
+ 
